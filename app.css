@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+h2,
+h3 {
+    color:#CC8D3B
+}
+
+footer{
+    padding: 10px;
+    color:black;
+    background-color: #CC8D3B;
+    text-align: left;
+    font-weight: bold;
+    list-style-type: none;
+    border-style:solid;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+footer .sosial-media li{
+    list-style-type: none;
+    
+}
+footer .sosial-media ul{
+    display:flex;
+    justify-content: start;
+}
+
+html {
+    background-color:aliceblue;
+}
+
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+
+    color: white
+}
+
+nav a :hover {
+    font-weight: bold;
+}
+
+.profile header {
+    text-align: center;
+}
+
+.featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile img {
+    width: 200px
+}
+
+#content {
+    flex: 5;
+}
+
+aside {
+    flex: 1;
+}
+
+.jumbroton {
+    font-size: 20px;
+    padding: 7px;
+    background-color:#CC8D3B;
+    text-align: left;
+    color: black;
+    border-style:solid ;
+    border-bottom: #CC8D3B;
+    border-color: black;
+    border-width: 4px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav {
+    background-color:#CC8D3B;
+    padding: 1px;
+    border-style: solid;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-color: black;
+    border-width: 4px;
+}
+
+nav ul {
+    padding-inline: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+main {
+    padding: 20px;
+
+    display: flex;
+    gap: 1.5rem;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+header {
+    display: inline;
+}
+header.navbar-container .nav-list li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    padding: .5rem 1.5rem;
+    color: black;
+    border-radius: 999px;
+  }
+
+  header.navbar-container .nav-list li:hover a {
+    background-color:#a76b1d;
+    color: black;
+  }
+
+  @media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+}
